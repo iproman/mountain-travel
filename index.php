@@ -29,5 +29,21 @@
         <a href="#" class="btn">Contact Us Now</a>
     </div>
 </section>
+<section class="destinations">
+    <h3 class="title">
+        Some of our destinations:
+    </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque elit lacus, nec eleifend massa dapibus
+        vitae. Sed viverra maximus consectetur. Aliquam id pharetra justo, sagittis semper lorem. Sed viverra luctus ex,
+        id fringilla leo lacinia non. In ultricies, ante et condimentum accumsan, orci magna pulvinar ipsum, id
+        elementum ex felis vitae leo. In maximus aliquet ligula id sodales. Praesent in sagittis enim.</p>
+    <hr>
+    <ul class="grid">
+        <li class="small" style="background-image: url(assets/img/mountain1.jpg);"></li>
+        <li class="large" style="background-image: url(assets/img/mountain2.jpg);"></li>
+        <li class="large" style="background-image: url(assets/img/mountain3.jpg);"></li>
+        <li class="small" style="background-image: url(assets/img/mountain4.jpg);"></li>
+    </ul>
+</section>
 </body>
 </html>
