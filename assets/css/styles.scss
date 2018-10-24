@@ -1,3 +1,8 @@
+/* Var */
+$mediaWidth1: '800px';
+$mediaWidth2: '1100px';
+$mediaWidth3: '1000px';
+
 /* General Styles */
 * {
   margin: 0;
@@ -71,6 +76,12 @@ section {
   }
 }
 
+@media (max-width: $mediaWidth1) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
 section:not(.hero):nth-child(even) {
   background-color: #f5f5f5;
 }
@@ -98,6 +109,17 @@ header {
       margin: 0 15px;
     }
   }
+}
+
+@media (max-width: $mediaWidth1) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+
 }
 
 @keyframes fadeIn {
@@ -151,6 +173,21 @@ header {
   }
 }
 
+@media (max-width: $mediaWidth1) {
+  .hero {
+    min-height: 600px;
+    h1 {
+      font-size: 48px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    a.btn {
+      padding: 15px 40px;
+    }
+  }
+}
+
 /*
 Destinations Section*/
 .destinations {
@@ -169,6 +206,26 @@ Destinations Section*/
     }
     li.large {
       flex-basis: 70%;
+    }
+  }
+}
+
+@media (max-width: $mediaWidth2) {
+  .destinations {
+    .grid {
+      li.small, li.large {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: $mediaWidth1) {
+  .destinations {
+    .grid {
+      li.small, li.large {
+        flex-basis: 100%;
+      }
     }
   }
 }
@@ -192,6 +249,17 @@ Packages Section*/
   }
 }
 
+@media (max-width: $mediaWidth1) {
+  .packages {
+    .grid {
+      li {
+        flex-basis: 100%;
+        padding: 20px;
+      }
+    }
+  }
+}
+
 /*
 Testimonials Section*/
 .testimonials {
@@ -200,6 +268,18 @@ Testimonials Section*/
     font-weight: 300;
     line-height: 1.5;
     margin: 40px 0 25px;
+  }
+}
+
+@media (max-width: $mediaWidth1) {
+  .testimonials {
+    .quote {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    .author {
+      font-size: 14px;
+    }
   }
 }
 
@@ -225,6 +305,17 @@ Contact Section*/
   }
 }
 
+@media (max-width: $mediaWidth3) {
+  .contact {
+    form {
+      input {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}
+
 /*
 Footer Section*/
 footer {
@@ -245,5 +336,20 @@ footer {
     font-size: 14px;
     opacity: 0.6;
     align-self: center;
+  }
+}
+
+@media (max-width: $mediaWidth2) {
+  footer {
+    flex-direction: column;
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        margin: 0 8px;
+      }
+    }
   }
 }
